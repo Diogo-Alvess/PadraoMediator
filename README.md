@@ -1,0 +1,7 @@
+Este repositório apresenta a implementação do padrão de projeto Mediator em um cenário de comunicação entre setores de uma empresa. Foram criados três componentes principais, CentralAtendimento, RH e Financeiro, que interagem entre si exclusivamente por meio de um objeto mediador, garantindo um fluxo de comunicação organizado, desacoplado e mais fácil de expandir.
+
+A interface Setor define o método notificar(String mensagem), permitindo que qualquer setor que a implemente envie mensagens sem conhecer diretamente as outras classes. Já a interface Mediator declara as operações responsáveis por coordenar a comunicação entre os setores, centralizando toda a lógica de interação.
+
+O padrão Mediator possibilita separar a lógica de comunicação da lógica interna de cada objeto, reduzindo o acoplamento e evitando dependências diretas entre os setores. Neste projeto, o mediador concreto (CentralAtendimento) implementa as regras de roteamento das mensagens, determinando qual setor deve agir em cada situação. Isso demonstra na prática como o padrão permite controlar a colaboração entre objetos sem que eles precisem interagir diretamente.
+
+O projeto reforça a importância do Mediator em sistemas que possuem múltiplos componentes que precisam trocar informações de forma estruturada. Ele oferece um mecanismo flexível para coordenar mensagens, simplificar a comunicação e manter a coesão do sistema, favorecendo manutenção e extensibilidade.
